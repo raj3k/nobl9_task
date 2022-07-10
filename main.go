@@ -115,7 +115,6 @@ func convertSyncMap(m sync.Map) []result {
 	})
 
 	r.Data = []int{}
-	fmt.Println(len(results) - 1)
 	for i := 0; i < len(results[0].Data); i++ {
 		for j := 0; j < len(results); j++ {
 			r.Data = append(r.Data, results[j].Data[i])
