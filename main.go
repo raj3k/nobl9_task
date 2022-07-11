@@ -133,7 +133,7 @@ func getMethod(c *gin.Context) {
 		log.Fatal(err)
 	}
 
-	length, err := strconv.Atoi(c.Query("length"))
+	length, err := strconv.Atoi(c.DefaultQuery("length", "2"))
 	if err != nil {
 		log.Fatal(err)
 	}
